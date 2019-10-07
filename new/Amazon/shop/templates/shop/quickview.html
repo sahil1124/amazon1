@@ -1,0 +1,164 @@
+{%extends 'shop/index.html' %}
+
+{%block content%}
+<!-- <div class="col-md-12 my-4">
+
+    <img src='{{prod.image_url}}' alt="sorry" class="align-items-center" width="200px">
+  </div> -->
+    <!-- <div class="container my-4 ">
+
+      <div class="row">
+        <div class="col-md-8 blog-main">
+          <h3 class="pb-4 mb-4 font-italic border-bottom">
+            {{prod.product_name}}
+
+          </h3>
+          <h3>{{prod.price}}</h3>
+          <strong>
+            <ul>
+              {{prod.desc}}
+            </ul>
+          </strong>
+
+
+          <table class="table ">
+
+  <tbody>
+
+      <tr>
+            <th scope="col">Brand</th>
+        <th scope="col">{{prod.Brand}}</th>
+      </tr>
+
+        <tr class="thead-dark">
+              <th scope="col" >Model</th>
+          <th scope="col">{{prod.Model}}</th>
+        </tr>
+
+          <tr>
+                <th scope="col">Model Name</th>
+            <th scope="col">{{prod.Model_Name}}</th>
+          </tr>
+
+            <tr class="thead-dark">
+                  <th scope="col">Model Year</th>
+              <th scope="col">{{prod.Model_Year}}</th>
+            </tr>
+
+              <tr >
+                    <th scope="col">Item Weight</th>
+                <th scope="col">{{prod.Item_Weight}}</th>
+              </tr>
+
+
+
+
+                <tr class="thead-dark">
+                      <th scope="col" >Batteries</th>
+                  <th scope="col">{{prod.Batteries}}</th>
+                </tr>
+
+                  <tr>
+                        <th scope="col">Item Model</th>
+                    <th scope="col">{{prod.Item_model}}</th>
+                  </tr>
+
+                    <tr class="thead-dark">
+                          <th scope="col">Compatible Devices</th>
+                      <th scope="col">{{prod.Compatible_Devices}}</th>
+                    </tr>
+
+                      <tr >
+                            <th scope="col">Additional Features</th>
+                        <th scope="col">{{prod.Additional_Features}}</th>
+                      </tr>
+
+                      <tr class="thead-dark">
+                            <th scope="col">Product Dimensions</th>
+                        <th scope="col">{{prod.Product_Dimensions}}</th>
+                      </tr>
+
+
+                                            <tr >
+                                                  <th scope="col">Included Components</th>
+                                              <th scope="col">{{prod.Included_Components}}</th>
+                                            </tr>
+
+  </tbody>
+</table>
+</div>
+</div>
+<a href="{{prod.product_url}}"><button type="button" name="button" class="btn btn-danger btn-lg">Buy Now</button></a>
+</div> -->
+
+
+<div class="containers" style="top-margin:5%;">
+
+  <div style="float:left;padding:0 10%;width:40%;">
+    <img src="{{prod.image_url}}" alt="..." width="110%">
+	<br><a href="{{prod.product_url}}"><button type="button" class="btn btn-danger btn-lg " style="margin-top:5%;width:100%;">❂  BUY NOW</button></a>
+  </div>
+
+  <div style="width:60%;float:right;top-margin:10%;">
+  <h2 style="color:#878787;font-size:100%;font-weight:600;">{{prod.Brand}}</h2>
+  <h1 style="font-size:200%;">{{prod.product_name}}</h1>
+  <h3 style="font-weight:400;">Rs.{{prod.price}}</h3>
+  <h6 style="color:#26a541;">Buy this Product at Special Price</h6>
+  <h4>Description</h4>
+  <article>
+  {{prod.desc}}
+  <table class="table table-striped my-3" >
+  <tbody>
+    <tr>
+      <td>Brand</td>
+      <td>{{prod.Brand}}</td>
+    </tr>
+    <tr>
+      <td>Model</td>
+      <td>{{prod.Model}}</td>
+    </tr>
+    <tr>
+      <td>Model Name</td>
+      <td>{{prod.Model_Name}}</td>
+    </tr>
+	<tr>
+      <td>Model Year</td>
+      <td>{{prod.Model_Year}}</td>
+    </tr>
+    <tr>
+      <td>Item Weight</td>
+      <td>{{prod.Item_Weight}}</td>
+    </tr>
+    <tr>
+      <td>Product Dimensions</td>
+      <td>{{prod.Product_Dimensions}}</td>
+    </tr>
+	<tr>
+      <td>Batteries</td>
+      <td>{{prod.Batteries}}</td>
+    </tr>
+    <tr>
+      <td>Item model number</td>
+      <td>{{prod.Item_model}}</td>
+    </tr>
+    <tr>
+      <td>Compatible Devices</td>
+      <td>{{prod.Compatible_Devices}}</td>
+    </tr>
+	<tr>
+      <td>Additional Features</td>
+      <td>{{prod.Additional_Features}}</td>
+    </tr>
+    <tr>
+      <td>Included Compone</td>
+      <td>{{prod.Included_Components}}</td>
+    </tr>
+  </tbody>
+  </table>
+  </article>
+  </div>
+
+
+ </div>
+
+{% endblock %}
